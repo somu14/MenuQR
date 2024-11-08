@@ -26,7 +26,7 @@ function Menupage() {
   // Generate QR code for the restaurant URL
   const generateQrCode = async () => {
     try {
-      const url = `http://192.168.29.197:3000/${id}`; // Replace with your menu page URL format
+      const url = `https://menuqrweb.vercel.app/${id}`; // Replace with your menu page URL format
       const qrCodeDataUrl = await QRCode.toDataURL(url);
       setQrCodeUrl(qrCodeDataUrl);
     } catch (err) {
